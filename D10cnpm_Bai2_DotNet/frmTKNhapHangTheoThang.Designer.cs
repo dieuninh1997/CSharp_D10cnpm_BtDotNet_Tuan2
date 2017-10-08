@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.tb_NhapHangBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.DemoQuanLyBanHangDataSet = new D10cnpm_Bai2_DotNet.DemoQuanLyBanHangDataSet();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
@@ -37,8 +37,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnThongKe = new System.Windows.Forms.Button();
             this.dtpFrom = new System.Windows.Forms.DateTimePicker();
-            this.dtpTo = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
+            this.dtpTo = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.tb_NhapHangBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DemoQuanLyBanHangDataSet)).BeginInit();
             this.SuspendLayout();
@@ -56,9 +56,9 @@
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            reportDataSource2.Name = "DataSet1";
-            reportDataSource2.Value = this.tb_NhapHangBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
+            reportDataSource1.Name = "DataSet1";
+            reportDataSource1.Value = this.tb_NhapHangBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "D10cnpm_Bai2_DotNet.BaoCaoNhapHang.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 91);
             this.reportViewer1.Name = "reportViewer1";
@@ -95,13 +95,6 @@
             this.dtpFrom.Size = new System.Drawing.Size(200, 20);
             this.dtpFrom.TabIndex = 4;
             // 
-            // dtpTo
-            // 
-            this.dtpTo.Location = new System.Drawing.Point(369, 27);
-            this.dtpTo.Name = "dtpTo";
-            this.dtpTo.Size = new System.Drawing.Size(200, 20);
-            this.dtpTo.TabIndex = 6;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -110,6 +103,13 @@
             this.label2.Size = new System.Drawing.Size(29, 13);
             this.label2.TabIndex = 5;
             this.label2.Text = "đến ";
+            // 
+            // dtpTo
+            // 
+            this.dtpTo.Location = new System.Drawing.Point(369, 27);
+            this.dtpTo.Name = "dtpTo";
+            this.dtpTo.Size = new System.Drawing.Size(200, 20);
+            this.dtpTo.TabIndex = 6;
             // 
             // frmTKNhapHangTheoThang
             // 
@@ -141,7 +141,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnThongKe;
         private System.Windows.Forms.DateTimePicker dtpFrom;
-        private System.Windows.Forms.DateTimePicker dtpTo;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DateTimePicker dtpTo;
     }
 }

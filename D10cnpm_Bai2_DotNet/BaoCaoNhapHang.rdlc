@@ -365,7 +365,7 @@
                             <TextRun>
                               <Value>=Fields!NgayNhap.Value</Value>
                               <Style>
-                                <Format>D</Format>
+                                <Format>MMM d, yyyy</Format>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -708,11 +708,11 @@
   </DataSets>
   <ReportParameters>
     <ReportParameter Name="FromMonth">
-      <DataType>String</DataType>
+      <DataType>DateTime</DataType>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
     <ReportParameter Name="ToMonth">
-      <DataType>String</DataType>
+      <DataType>DateTime</DataType>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
   </ReportParameters>
