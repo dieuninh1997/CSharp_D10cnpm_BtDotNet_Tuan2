@@ -30,8 +30,7 @@ namespace D10cnpm_Bai2_DotNet
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-
-           // this.reportViewer1.RefreshReport();
+            
         }
 
         private void menuTKNH_Click(object sender, EventArgs e)
@@ -54,6 +53,8 @@ namespace D10cnpm_Bai2_DotNet
 
         private void menuTKDoanhSo_Click(object sender, EventArgs e)
         {
+            frmBieuDoDoanhSoThang bieudo = new frmBieuDoDoanhSoThang();
+            bieudo.Show();
 
         }
     }
